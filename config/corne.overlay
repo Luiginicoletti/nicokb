@@ -1,0 +1,12 @@
+&i2c1 {
+    status = "okay";
+    sda-pin = <26>;  // Pode variar conforme o modelo
+    scl-pin = <27>;
+};
+
+&oled_display {
+    compatible = "ssd1306_i2c";  // Altere para "sh1106_i2c" se necessário
+    i2c = <&i2c1>;
+    width = <128>;
+    height = <32>;  // Altere para 64 se for maior
+};
