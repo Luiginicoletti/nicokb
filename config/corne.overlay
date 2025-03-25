@@ -1,12 +1,13 @@
-&i2c1 {
+&i2c0 {
     status = "okay";
-    sda-pin = <26>;  // Pode variar conforme o modelo
-    scl-pin = <27>;
-};
+    compatible = "nordic,nrf-twim";
+    sda-pin = <10>;  // P0.10 (D2)
+    scl-pin = <9>;   // P0.09 (D3)
 
-&oled_display {
-    compatible = "ssd1306_i2c";  // Altere para "sh1106_i2c" se necessário
-    i2c = <&i2c1>;
-    width = <128>;
-    height = <32>;  // Altere para 64 se for maior
+    oled: ssd1306@3c {
+        compatible = "solomon,ssd1306fb";
+        reg = <0x3c>;
+        width = <128>;
+        height = <32>;
+    };
 };
