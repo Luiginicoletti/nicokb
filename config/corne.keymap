@@ -92,10 +92,10 @@
 
         MULT {
             bindings = <
-&trans  &kp C_PRINT_SCREEN            &trans          &trans      &kp C_BRIGHTNESS_DOWN  &kp C_BRIGHTNESS_UP        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp C_PLAY_PAUSE  &kp C_PREVIOUS  &kp C_NEXT  &kp C_VOLUME_UP    &kp C_MUTE    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans          &trans      &kp C_VOLUME_DOWN  &trans        &trans  &trans  &trans  &trans  &trans  &trans
-                                          &trans      &trans             &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS        &trans  &trans  &trans
+&trans  &trans            &trans          &kp RG(LS(NUMBER_4))  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp C_PLAY_PAUSE  &kp C_PREVIOUS  &kp C_NEXT            &kp C_VOLUME_UP       &kp C_MUTE              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans          &trans                &kp C_VOLUME_DOWN     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+                                          &trans                &trans                &trans                  &trans  &trans  &trans
             >;
         };
     };
